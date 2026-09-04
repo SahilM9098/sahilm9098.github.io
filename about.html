@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1117" />
+  <meta name="description" content="About the ARK Mobile Catalog & Command Helper." />
+  <title>About — ARK Mobile Catalog</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071018;
+      --panel: #0e1822;
+      --panel-2: #111e29;
+      --text: #f4f8fb;
+      --muted: #8fa6b8;
+      --line: rgba(255,255,255,.09);
+      --accent: #69d6a2;
+      --accent-2: #48b9ff;
+      --shadow: 0 18px 55px rgba(0,0,0,.3);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% -10%, rgba(72,185,255,.16), transparent 34rem),
+        radial-gradient(circle at 100% 0%, rgba(105,214,162,.11), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+    }
+    a { color: #9bdcff; }
+    .page { width: min(920px, calc(100% - 28px)); margin: 0 auto; padding: 34px 0 60px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 22px; }
+    .brand { font-weight: 900; color: var(--text); text-decoration: none; }
+    .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav-link { display: inline-flex; align-items: center; min-height: 38px; padding: 0 12px; border: 1px solid var(--line); border-radius: 10px; color: #cfe3ef; background: rgba(255,255,255,.035); text-decoration: none; font-size: 12px; font-weight: 800; }
+    .nav-link:hover, .nav-link.active { border-color: rgba(105,214,162,.35); background: rgba(105,214,162,.08); }
+    .hero { margin-bottom: 18px; }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .15em; font-size: 12px; font-weight: 800; }
+    h1 { margin: 6px 0 9px; font-size: clamp(30px, 5vw, 48px); line-height: 1.05; }
+    .lead { color: #b7cad7; margin: 0; line-height: 1.65; max-width: 760px; }
+    .card { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(17,30,41,.96), rgba(12,22,31,.96)); border-radius: 16px; padding: 20px; margin-top: 12px; box-shadow: var(--shadow); }
+    .card h2 { margin: 0 0 9px; font-size: 19px; }
+    .card h3 { margin: 20px 0 7px; font-size: 15px; }
+    .card p, .card li { color: #b7cad7; line-height: 1.65; font-size: 14px; }
+    .card p { margin: 8px 0; }
+    .card ul { margin: 8px 0 0; padding-left: 20px; }
+    .note { border-left: 3px solid rgba(105,214,162,.5); padding: 10px 12px; background: rgba(105,214,162,.055); border-radius: 0 10px 10px 0; color: #bcd5c9; margin-top: 14px; font-size: 13px; line-height: 1.6; }
+    .updated { display: inline-block; margin-top: 6px; color: var(--muted); font-size: 12px; }
+    .footer { color: #657d90; font-size: 12px; text-align: center; margin-top: 24px; }
+    @media (max-width: 640px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .page { padding-top: 22px; }
+    }
+</style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html">ARK Mobile Catalog</a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Catalog</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="eyebrow">About this project</div>
+      <h1>ARK Mobile Catalog & Command Helper</h1>
+      <p class="lead">A lightweight fan-made reference for quickly finding ARK Mobile dinosaur paths, item blueprint paths, admin commands, and mobile-oriented graphics commands.</p>
+    </header>
+
+    <section class="card">
+      <h2>What the site does</h2>
+      <p>The catalog is built to make command lookup faster on phones and desktop browsers. You can search by real in-game names, choose command values, and copy the generated command directly.</p>
+      <ul>
+        <li>Dino catalog with searchable names and spawn command generation.</li>
+        <li>Item catalog with quality, quantity, and Force BP controls.</li>
+        <li>Admin command reference with syntax and parameter explanations.</li>
+        <li>Mobile-focused UE4/4.17-era graphics and performance command notes.</li>
+      </ul>
+
+      <h3>Accuracy and game-build differences</h3>
+      <p>ARK commands and Unreal Engine console variables can behave differently between game versions, maps, devices, server settings, and mobile builds. Some commands may be ignored or may require a restart/startup configuration. Test commands carefully before relying on them in an important save.</p>
+
+      <h3>Fan-made project</h3>
+      <p>This website is an independent community reference and is not an official ARK product. ARK, game names, assets, and related trademarks belong to their respective owners. No ownership of those names or game content is claimed.</p>
+
+      <h3>Corrections and feedback</h3>
+      <p>If you find an incorrect command, missing item, or bad blueprint path, you can report it through the public GitHub project: <a href="https://github.com/SahilM9098/ark-mobile-catalog" rel="noopener noreferrer">ark-mobile-catalog on GitHub</a>.</p>
+      <div class="note">This site is intended as a reference tool. Always keep backups of saves/configuration files before experimenting with commands or graphics settings.</div>
+    </section>
+
+    <div class="footer">ARK Mobile Catalog · <a href="privacy.html">Privacy Policy</a></div>
+  </main>
+</body>
+</html>
